@@ -18,5 +18,8 @@ def word_substituter(tweet)
   arrayify.each_with_index do |word, i|
     dictionary.keys.each do |sub_word|
       if word == sub_word
-        word = dictionary[sub_word]
+        arrayify[i] = dictionary[sub_word]
       end
+    end
+  end
+end
