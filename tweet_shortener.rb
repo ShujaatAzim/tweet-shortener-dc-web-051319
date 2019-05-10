@@ -11,7 +11,9 @@ def dictionary
     "at" => "@",
     "and" => "&"
   }
-
-
-
 end
+
+def word_substituter(tweet)
+  arrayify = tweet.to_a
+  arrayify.each do |word|
+    
