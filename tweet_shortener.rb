@@ -14,6 +14,8 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  arrayify = tweet.to_a
+  arrayify = tweet.split(" ")
   arrayify.each do |word|
-    
+    dictionary.keys.each do |sub_word|
+      if word == sub_word
+        word = dictionary[sub_word]
