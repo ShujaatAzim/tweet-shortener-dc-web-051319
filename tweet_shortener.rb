@@ -22,4 +22,5 @@ def word_substituter(tweet)
       end
     end
   end
+  arrayify.join(" ")
 end
